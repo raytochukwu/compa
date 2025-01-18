@@ -2,10 +2,12 @@ import React from "react";
 
 const CurrencyPair = () => {
   return (
-    <section className=" py-20 px-6">
-      <h2 className="text-center text-5xl font-semibold mb-6">Currency Pair</h2>
-      <p className="  mb-[48px] mx-auto font-normal text-base text-center text-[#696969] leading-5 w-[863px]">Monitor your desired currency pairs with ease on Compa. Whether you’re trading USD/EUR or any other pair, we help you find the best exchange rates quickly and efficiently. Stay informed and make the most of your currency exchanges.</p>
-      <div className="flex py-6 px-[24px] mx-auto h-[104px] w-[1284px] rounded-3xl border border-black justify-between  mb-4">
+    <section className=" py-20  px-6">
+      <h2 className="text-center text-2xl md:text-5xl font-semibold mb-6">Currency Pair</h2>
+     
+     <p className="  mb-[48px] mx-auto font-normal text-base text-center text-[#696969] leading-5 max-w-[863px]">Monitor your desired currency pairs with ease on Compa. Whether you’re trading USD/EUR or any other pair, we help you find the best exchange rates quickly and efficiently. Stay informed and make the most of your currency exchanges.</p>
+     <div className=" overflow-x-scroll w-full">
+      <div className="flex  py-6 px-[24px] mx-auto h-[104px] w-[1284px] rounded-3xl border border-black justify-between  mb-4">
         <button className="bg-[#81F8F8] px-4 py-[10px]font-bold  text-[14px] rounded-lg">Africa Countries </button>
         <button className="bg-white  px-4 py-[10px] font-bold text-[14px] rounded-lg">Asia Countries</button>
         <button className="bg-white px-4 py-[10px] font-bold  text-[14px] rounded-lg">Australia Countries</button>
@@ -15,7 +17,8 @@ const CurrencyPair = () => {
         <button className="bg-white px-4 py-[10px] font-bold  text-[14px] rounded-lg">North America Countries</button>
         {/* Add other regions */}
       </div>
-     <div className=" w-full">
+      </div>
+     <div className=" overflow-x-scroll w-full">
       <div className=" mx-auto flex w-[1284px] h-[72px] bg-[#1A3232] rounded-t-[24px] py-[12px] px-[24px] justify-between ">
         <div className="text-white w-[106px] text-center text-[16px] py-[12px] font-semibold ">S/N</div>
         <div className="text-white w-[150px] text-center text-[16px] py-[12px] font-semibold  ">Country</div>
