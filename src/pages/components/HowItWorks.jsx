@@ -3,7 +3,7 @@ import React from "react";
 const HowItWorks = () => {
   return (
     <section className="py-12 px-6 w-full">
-        <div className=" text-center mx-auto max-w-[365px] mb-[24px]">
+        <div id="works" className=" text-center mx-auto max-w-[365px] mb-[24px]">
       <p className="text-center text-2xl font-semibold text-[#56A5A5]">How to</p>
       <h1 className=" font-semibold text-2xl md:text-5xl leading-[72px]">Find Best Rate</h1>
 
@@ -34,7 +34,7 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="w-full flex justify-center">
-        <button className=" px-4 py-4 font-medium w-[263px] border text-[16px] rounded-[12px]">Convert now </button>
+        <a  href='/ExchangeRates' className=" px-4 py-4 font-medium text-center w-[263px] border text-[16px] rounded-[12px]">Convert now </a>
         </div>
     </section>
   );

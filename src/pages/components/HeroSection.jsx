@@ -11,7 +11,7 @@ const HeroSection = () => {
       <p className="text-gray-600 text-[16px] mx-auto  max-w-[863px] auto mb-[97px]">
       Are you ready to get the best exchange rates effortlessly? Join our waitlist and be among the first to experience Compa, the ultimate platform for comparing fiat currency exchange rates. By signing up, you'll gain early access to exclusive features and the opportunity to secure the best deals before anyone else.
       </p>
-      <div className="mb-[20px] md:mb-[125px]  max-w-[1280px] py-[32px] md:py-[72px] h-[466px] md:h-[305px] border border-[#767676] rounded-[24px] mx-auto gap-4">
+      <div id="converter" className="mb-[20px] md:mb-[125px]  max-w-[1280px] py-[32px] md:py-[72px] h-[466px] md:h-[305px] border border-[#767676] rounded-[24px] mx-auto gap-4">
         <h1 className="font-bold text-[28px]  mb-[32px]">Find Best Rate</h1>
         <div className="flex flex-col md:flex-row justify-center  items-center md:gap-[42px]">
         <div className="flex mb-[14px] flex-col w-[319px] md:w-[380px]">

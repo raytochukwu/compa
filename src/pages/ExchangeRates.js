@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ExchangeRates = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center ">
       {/* Heading Section */}
       <div className="w-full max-w-5xl bg-teal-900 text-white rounded-md p-6 text-center mb-6">
         <h1 className="text-2xl font-semibold">
@@ -14,10 +15,63 @@ const ExchangeRates = () => {
       </div>
 
       {/* Filter Section */}
-      <div className="w-full max-w-5xl flex justify-end mb-4 px-4">
+      {/* <div className="w-full max-w-5xl flex justify-end mb-4 px-4">
         <button className="border border-gray-300 rounded-md px-4 py-2 text-sm bg-white">
           Filter
         </button>
+      </div> */}
+
+      <div className="w-full max-w-5xl flex justify-end mb-4 px-4">
+        <div className="relative inline-block text-left">
+          {/* Dropdown Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+          >
+            Filter
+            <svg
+              className="ml-2 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+
+          {/* Dropdown Content */}
+          {isOpen && (
+            <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <div className="py-2">
+                <label className="flex items-center px-4 py-2 hover:bg-gray-100">
+                  <input
+                    type="checkbox"
+                    className="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                  />
+                  <span className="ml-2 text-gray-700">No Fees</span>
+                </label>
+                <label className="flex items-center px-4 py-2 hover:bg-gray-100">
+                  <input
+                    type="checkbox"
+                    className="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                  />
+                  <span className="ml-2 text-gray-700">Fee</span>
+                </label>
+                <label className="flex items-center px-4 py-2 hover:bg-gray-100">
+                  <input
+                    type="checkbox"
+                    className="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                  />
+                  <span className="ml-2 text-gray-700">Fastest Transfer</span>
+                </label>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Cards Grid */}

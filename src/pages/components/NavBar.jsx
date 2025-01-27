@@ -11,23 +11,23 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8 text-gray-600">
-          <a href="#" className="hover:text-gray-900">
+          <a href="#converter" className="hover:text-gray-900">
             Converter
           </a>
-          <a href="#" className="hover:text-gray-900">
+          <a href="#services" className="hover:text-gray-900">
             Services
           </a>
-          <a href="#" className="hover:text-gray-900">
+          <a href="#works" className="hover:text-gray-900">
             How it works
           </a>
-          <a href="#" className="hover:text-gray-900">
+          <a href="#Newsletter" className="hover:text-gray-900">
             Newsletter
           </a>
         </nav>
 
         {/* Contact Button */}
         <a
-          href="#"
+          href="#Contact"
           className="hidden md:block bg-cyan-300 text-gray-800 px-6 py-2 rounded-lg shadow hover:bg-cyan-400"
         >
           Contact us
@@ -59,23 +59,23 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <nav className="space-y-4 px-6 py-4">
-            <a href="#" className="block text-gray-600 hover:text-gray-900">
+            <a href="#converter" className="block text-gray-600 hover:text-gray-900">
               Converter
             </a>
-            <a href="#" className="block text-gray-600 hover:text-gray-900">
+            <a href="#Services" className="block text-gray-600 hover:text-gray-900">
               Services
             </a>
-            <a href="#" className="block text-gray-600 hover:text-gray-900">
+            <a href="#works" className="block text-gray-600 hover:text-gray-900">
               How it works
             </a>
-            <a href="#" className="block text-gray-600 hover:text-gray-900">
+            <a href="#Newsletter" className="block text-gray-600 hover:text-gray-900">
               Newsletter
             </a>
           </nav>
 
           <div className="px-6 pb-4">
             <a
-              href="#"
+              href="#Contact"
               className="block w-full bg-cyan-300 text-gray-800 text-center py-2 rounded-lg shadow hover:bg-cyan-400"
             >
               Contact us

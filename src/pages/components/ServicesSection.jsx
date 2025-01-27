@@ -10,7 +10,7 @@ const ServicesSection = () => {
 
   return (
     <section className="py-[12px] md:py-[120px] px-6 ">
-     <div className=" text-center mx-auto w-[365px] mb-[24px]">
+     <div id="services" className=" text-center mx-auto w-[365px] mb-[24px]">
       <p className="text-center text-2xl font-semibold text-[#56A5A5]">Our</p>
       <h1 className=" font-semibold text-5xl leading-[72px]">Services</h1>
 

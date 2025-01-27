@@ -3,7 +3,7 @@ import React from "react";
 const RateAlertSection = () => {
   return (
     <section className="bg-[#fffaf0] py-16 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div id="Contact" className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Text Section */}
         <div>
           <h2 className="text-3xl md:text-[48px] font-bold mb-6">Rate Alert</h2>
